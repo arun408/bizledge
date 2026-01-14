@@ -1,0 +1,301 @@
+@media (min-width:992px) {
+    .dropdown-menu {
+        display: flex !important;
+        left: 50% !important;
+        top: 100% !important;
+        transform: translate(-50%, 20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0) !important;
+    }
+
+    .dropdown:hover > .nav-link.dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu .dropdown-item {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .dropdown-menu.show {
+        max-height: 350px;
+        overflow-y: scroll;
+    }
+
+    .dropdown-menu ul:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .dropdown-menu ul:nth-child(3) {
+        margin-top: 15px;
+    }
+}
+
+/* ---------- for hero section ---------- */
+@media (max-width: 768px) {
+    .hero-section::before {
+        transform: scale(1.08);
+    }
+
+    .hero-section.zoom-in::before {
+        transform: scale(1);
+    }
+
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 180px;
+    }
+
+    .hero-subtitle br {
+        display: none;
+    }
+
+    .hero-bottom-image {
+        margin-top: 20px;
+    }
+
+    .hero-bottom-image .hero-img {
+        max-width: 90%;
+    }
+}
+
+/* ---------- for feature section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #feature {
+        padding: 80px 0px;
+    }
+
+    .feature-card {
+        padding: 24px 32px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #feature {
+        padding: 60px 0px;
+    }
+
+    .feature-card {
+        padding: 24px 32px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #feature {
+        padding: 40px 0px;
+    }
+
+    .feature-card {
+        padding: 24px 32px;
+    }
+}
+
+/* ---------- for Discover section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #discover {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #discover {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #discover {
+        padding: 40px 0px;
+    }
+}
+
+
+/* ---------- for Invoice section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #invoice-section {
+        padding: 80px 0px;
+    }
+
+    .invoice-card-img-wrapper {
+        padding: 40px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #invoice-section {
+        padding: 60px 0px;
+    }
+
+    .invoice-card-img-wrapper {
+        padding: 20px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #invoice-section {
+        padding: 40px 0px;
+    }
+
+    .invoice-card-img-wrapper {
+        padding: 20px;
+    }
+}
+
+/* ---------- for Growth section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #growth-section {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #growth-section {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #growth-section {
+        padding: 40px 0px;
+    }
+}
+
+/* ---------- for Care section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #care-section {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #care-section {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #care-section {
+        padding: 40px 0px;
+    }
+}
+
+/* ---------- for Pricing section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #pricing-section {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #pricing-section {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #pricing-section {
+        padding: 40px 0px;
+    }
+}
+
+/* ---------- for Feedback section ---------- */
+
+@media (min-width: 992px) {
+    .custom-card { padding: 32px; flex: 0 0 350px; height: 500px; }
+    .scroll-track { height: 250vh; position: relative; }
+    .testimonial-fluid-section {
+        background-color: #191919;
+        width: 100%; height: 100vh;
+        display: flex; align-items: center;
+        overflow: hidden; position: sticky; top: 0;
+        padding: 100px 0px;
+    }
+    .cards-row-wrapper { display: flex; gap: 24px; position: relative; align-items: center; will-change: transform; }
+    .card-1 { z-index: 10; }
+    .card-2 { z-index: 5; }
+    .card-3 { z-index: 4; }
+    .card-4 { z-index: 3; }
+}
+
+@media (max-width: 991.98px) {
+    .custom-card { padding: 20px; }
+    .scroll-track { height: auto !important; }
+    .testimonial-fluid-section { padding: 60px 0; background-color: #121212; }
+    @media (min-width: 768px) {
+    .cards-row-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    }
+    @media (max-width: 767.98px) {
+                .cards-row-wrapper { display: flex; flex-direction: column; gap: 20px; }
+    }
+}
+
+/* ---------- for Blog section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #blog-section {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #blog-section {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #blog-section {
+        padding: 40px 0px;
+    }
+
+    .blog-img {
+        height: 220px;
+    }
+}
+
+/* ---------- for Footer section ---------- */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    #footer-section {
+        padding: 80px 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #footer-section {
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width:575.98px) {
+    #footer-section {
+        padding: 40px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1-5 {
+        flex: 0 0 auto;
+        width: 12.5%;
+    }
+}

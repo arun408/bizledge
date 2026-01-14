@@ -3,11 +3,682 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bizledge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
+  <!-- navbar -->
+  <header class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="#" class="d-lg-none cart text-decoration-none ms-auto me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu p-4">
+            <ul>
+              <li><a class="dropdown-item" href="#">Main Pages</a></li>
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Features</a></li>
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Pricing</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Integration</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Inner Pages</a></li>
+              <li><a class="dropdown-item" href="#">Blog single</a></li>
+              <li><a class="dropdown-item" href="#">Pricing single</a></li>
+              <li><a class="dropdown-item" href="#">Integration single</a></li>
+              <li><a class="dropdown-item" href="#">Early access</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Utility Pages</a></li>
+              <li><a class="dropdown-item" href="#">Instructions</a></li>
+              <li><a class="dropdown-item" href="#">Early access</a></li>
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+              <li><a class="dropdown-item" href="#">License</a></li>
+              <li><a class="dropdown-item" href="#">Changelog</a></li>
+              <li><a class="dropdown-item" href="#">Style guide</a></li>
+              <li><a class="dropdown-item" href="#">Password</a></li>
+            </ul>
+          </div>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Feature</a>
+         </li>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none cart" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+        <button class="rounded-3 sign-btn">Sign Up</button>
+      </div>  
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="container-fluid hero-section d-flex align-items-center">
+  <div class="container text-center hero-content">
+    <h1 class="hero-title">
+      Automate Your Billing,<br>
+      Simplify Your Growth
+    </h1>
+    <p class="hero-subtitle">
+      Designed for teams that value speed, accuracy, and seamless<br>
+      integration with their favorite tools.
+    </p>
+    <button class="hero-btn"><span class="rotate-text">Try It Now</span></button>
+    <div class="hero-bottom-image">
+      <img src="images/hero_sub_img1.png" alt="Hero Image" class="img-fluid rounded-4 hero-tilt">
+    </div>
+  </div>
+</section>
+<section class="container-fluid" id="feature">
+  <div class="container text-center">
+    <h2 class="feature-title reveal">All tools needed<br> to simplify finances</h2>
+    <p class="feature-sub-title mb-5 reveal">From automation to intelligence handle transactions with transparency and confidence.</p>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 reveal">
+        <div class="feature-card h-100 rounded-3">
+          <p class="mb-4"><strong>Automatically create invoices,</strong> send reminders, and monitor payments seamlessly — everything managed centrally.</p>
+          <div class="feature-card-img">
+            <img src="images/feature-card-img1.png" alt="feature card img" class="img-fluid object-fit-cover rounded-4 shadow w-100 h-100">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 reveal">
+        <div class="feature-card h-100 rounded-3">
+          <p class="mb-4"><strong>Link your financial</strong> tools — synchronize data and generate automated reports effortlessly.</p>
+          <div class="feature-card-img">
+            <img src="images/feature-card-img-2.png" alt="feature card img" class="img-fluid object-fit-cover rounded-4 shadow w-100 h-100">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 reveal">
+        <div class="feature-card h-100 rounded-3">
+          <p class="mb-4"><strong>Safeguard money</strong> securely between your holdings for proper control and smoother financial management.</p>
+          <div class="feature-card-img">
+            <img src="images/feature-card-img3.png" alt="feature card img" class="img-fluid object-fit-cover rounded-4 shadow w-100 h-100">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 reveal">
+        <div class="feature-card h-100 rounded-3">
+          <p class="mb-4"><strong>Handle worldwide</strong> transactions smoothly — monitor, exchange, and remain compliant within dashboard.</p>
+          <div class="feature-card-img">
+            <img src="images/feature-card-img4.png" alt="feature card img" class="img-fluid object-fit-cover rounded-4 shadow w-100 h-100">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee-content" id="marquee">
+        <img src="images/marquee-img.png" alt="brand img">
+        <img src="images/marquee-img.png" alt="brand img">
+        <img src="images/marquee-img.png" alt="brand img">
+        <img src="images/marquee-img.png" alt="brand img">
+        <img src="images/marquee-img.png" alt="brand img">
+        <img src="images/marquee-img.png" alt="brand img">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid" id="discover">
+  <div class="container">
+    <h2 class="discover-title text-center">Explore everything <br>Bizledge can do</h2>
+    <p class="discover-sub-title mb-5 text-center">Streamline how your business moves money — faster, smarter,<br> with visibility and control.</p>
+    <div class="discover-wrapper">
+      <div class="row g-0">
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-arrow-right-arrow-left discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Smart Transfers</h3>
+          <p class="discover-card-sub-title m-0">Transfer funds across accounts or partners with confidence and real-time transparency.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-brain discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Financial Intelligence</h3>
+          <p class="discover-card-sub-title m-0">Access real-time insights on spending, forecasting, and cash flow, powered by Bizledge AI.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-receipt discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Billing & Invoicing</h3>
+          <p class="discover-card-sub-title m-0">Generate invoices quickly, monitor payments, and manage outstanding dues efficiently without effort or complexity easily.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-link discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Integrations Hub</h3>
+          <p class="discover-card-sub-title m-0">Connect your data across platforms like Xero, Stripe, and QuickBooks seamlessly in real time without delays.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-chart-column discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Performance Dashboard</h3>
+          <p class="discover-card-sub-title m-0">Monitor your business performance using clear real-time analytics and trends, presented together conveniently within a single dashboard view.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 border discover-card">
+          <div class="discover-icon-wrap mb-3">
+            <i class="fa-solid fa-coins discover-icon"></i>
+          </div>
+          <h3 class="discover-card-title mb-3">Treasury & Reserves</h3>
+          <p class="discover-card-sub-title m-0">Activate unused capital using automated treasury allocation and intelligent liquidity management tools advanced.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Invoice Section -->
+<section class="container-fluid" id="invoice-section">
+  <div class="container d-grid gap-5">
+    <div class="row g-4 align-items-stretch invoice-row1">
+      <div class="col-lg-6 col-12 order-2 order-lg-1">
+        <div class="invoice-card">
+          <h2>Manage Invoices with ease</h2>
+          <p class="mb-3 mb-lg-5">Store every client invoice centrally, send easily, track payments, and receive money faster securely.</p>
+          <ul class="list-group invoice-list">
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Create and send invoices instantly, customized with your brand identity.</span>
+            </li>
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Track invoice status easily—see which are sent, pending, or paid.</span>
+            </li>
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Receive payments faster by accepting instant transfers through connected accounts.</span>
+            </li>
+          </ul>
+          <button class="rounded-3 invoice-btn mt-4">Go to Invoices</button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 order-1 order-lg-2">
+        <div class="invoice-card-img-wrapper rounded-5">
+          <img src="images/invoice-card-img.png" alt="invoice img" class="img-fluid invoice-card-img rounded-2 shadow">
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-stretch invoice-row2">
+      <div class="col-lg-6 col-12">
+        <div class="invoice-card-img-wrapper rounded-5">
+          <img src="images/invoice-card-img1.png" alt="invoice img" class="img-fluid invoice-card-img rounded-2 shadow">
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="invoice-card">
+          <h2>Track Your Recurring Revenue</h2>
+          <p class="mb-3 mb-lg-5">Track your monthly income instantly from anywhere, anytime with clear insights.</p>
+          <ul class="list-group invoice-list">
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Live revenue tracking lets you monitor monthly earnings instantly, without waiting days.</span>
+            </li>
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Analyze growth trends and forecast future performance accurately.</span>
+            </li>
+            <li class="list-group-item border-0 invoice-item">
+              <i class="fa-solid fa-check invoice-icon"></i><span>Customer Loyalty Dashboard — Detect early churn and boost overall lifetime value.</span>
+            </li>
+          </ul>
+          <button class="rounded-3 invoice-btn mt-4">Go to Invoices</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Growth Section -->
+<section class="container-fluid" id="growth-section">
+  <div class="container text-center">
+    <h2 class="growth-section-title">Designed for adaptability,<br> scalability, and clarity.</h2>
+    <p class="growth-section-sub-title mb-5">A flexible system that grows with your business, simple to<br> begin, powerful as you expand.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-lightning-charge mb-3"></i>
+          <h3>Automation at core</h3>
+          <p class="m-0">Let automation manage billing and<br> reporting, quickly and reliably.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-grid mb-3"></i>
+          <h3>Modular by design</h3>
+          <p class="m-0">Design flexible workflows that adapt<br> as your business grows.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-link-45deg mb-3"></i>
+          <h3>Connected Ecosystem</h3>
+          <p class="m-0">Connect effortlessly with your preferred<br> tools and platforms.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-shield-check mb-3"></i>
+          <h3>Secure by Default</h3>
+          <p class="m-0">Build flexible workflows that evolve<br> as your business grows.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-graph-up mb-3"></i>
+          <h3>Insight-Driven Decisions</h3>
+          <p class="m-0">View your metrics clearly and<br> make confident decisions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="growth-section-card">
+          <i class="bi bi-people mb-3"></i>
+          <h3>Collaboration Ready</h3>
+          <p class="m-0">Bring your teams together in<br> a system that stays synchronized.</p>
+        </div>
+      </div>
+    </div>
+    <button class="rounded-3 growth-section-btn mt-5">Start automating today</button>
+  </div>
+</section>
+
+<!-- Care Section -->
+<section class="container-fluid" id="care-section">
+  <div class="container">
+    <h2 class="care-section-title text-center mb-5">Your smart financial companion<br> takes care of your money.</h2>
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center text-md-end">
+        <div class="logo-wrapper">
+          <img src="images/logo_img.png" alt="logo">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="care-list-wrapper d-flex justify-content-center d-md-block">
+          <ul class="care-list">
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Customized AI Language Coach</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Personal Efficiency Assistant</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Code Creation and Troubleshooting Assistant</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>AI Trip Planning Agent</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Human Language Data Analyst</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Smart AI Shopping Helper</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>AI-Powered Employee Onboarding Assistant</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>AI Lead Screening Sales Bot</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Smart Knowledge Hub Explorer</span>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <span>AI Content Creation Summary Tool</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="container-fluid" id="pricing-section">
+  <div class="container">
+    <h2 class="pricing-section-title text-center">Growth-ready plans for you</h2>
+    <p class="pricing-section-sub-title mb-5 text-center">For startups and growing teams, select a flexible plan matching your<br> workflow, with upgrades anytime.</p>
+    <div class="row g-3 align-items-stretch">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Growth</h3>
+            <p>For expanding businesses requiring additional control and actionable insights.</p>
+            <h4 class="mb-3">$69<span>/month</span></h4>
+            <button class="flex-grow-1 rounded-3 pricing-section-btn">Start Free Trial</button>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Unlimited projects</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Real-time analytics</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Advanced automation flows</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Priority chat support</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Team collaboration tools</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Scale</h3>
+            <p>For established companies aiming to optimize efficiency and expand their reach.</p>
+            <h4 class="mb-3">$99<span>/month</span></h4>
+            <button class="flex-grow-1 rounded-3 pricing-section-btn">Get Started</button>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>All Growth features</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Custom reporting</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Dedicated account manager</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>API access</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Enhanced security options</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Enterprise</h3>
+            <p>For expanding companies requiring greater control and actionable insights.</p>
+            <h4 class="mb-3">Contact Us</h4>
+            <button class="flex-grow-1 rounded-3 pricing-section-btn">Schedule a Demo</button>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>All Scale features</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>On-site training</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Custom integration</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>24/7 premium support</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Compliance and risk management</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Section -->
+<div class="scroll-track" id="trigger">
+    <section class="container-fluid testimonial-fluid-section">
+        <div class="container">
+          <h2 class="testimonial-title text-center">Here's what our<br>happy clients say.</h2>
+          <p class="testimonial-sub-title text-center mb-5">Share details about your company, core values, vision,<br> and long-term goals with us.</p>
+            <div class="cards-row-wrapper" id="cardRow">
+                
+                <div class="custom-card card-1">
+                    <div class="mt-4">
+                        <div class="rating-num">4.9</div>
+                        <div class="stars">★★★★★</div>
+                        <div class="reviews-text">600+ Reviews</div>
+                    </div>
+                    <div class="avatar-stack">
+                        <img src="https://i.pravatar.cc/100?img=1" style="margin-left:0">
+                        <img src="https://i.pravatar.cc/100?img=2">
+                        <img src="https://i.pravatar.cc/100?img=3">
+                        <img src="https://i.pravatar.cc/100?img=4">
+                    </div>
+                </div>
+
+                <div class="custom-card card-2">
+                    <div>
+                        <div class="author-top">Alan Smith</div>
+                        <h4 class="quote-text">“The Team's Innovative Approach Transformed Our Vision Into Reality. We Couldn't Be Happier With The Results.”</h4>
+                    </div>
+                    <div>
+                        <p class="author-name">Alan Smith</p>
+                        <span class="author-title">CEO of Cybertech</span>
+                    </div>
+                </div>
+
+                <div class="custom-card card-3">
+                    <div>
+                        <div class="author-top">Alan Smith</div>
+                        <h4 class="quote-text">“The Team's Innovative Approach Transformed Our Vision Into Reality. We Couldn't Be Happier With The Results.”</h4>
+                    </div>
+                    <div>
+                        <p class="author-name">Alan Smith</p>
+                        <span class="author-title">CEO of Cybertech</span>
+                    </div>
+                </div>
+
+                <div class="custom-card card-4">
+                    <div>
+                        <div class="author-top">Alan Smith</div>
+                        <h4 class="quote-text">“The Team's Innovative Approach Transformed Our Vision Into Reality. We Couldn't Be Happier With The Results.”</h4>
+                    </div>
+                    <div>
+                        <p class="author-name">Alan Smith</p>
+                        <span class="author-title">CEO of Cybertech</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+<section class="container-fluid" id="blog-section">
+  <div class="container">
+    <h2 class="blog-section-title text-center">Where Numbers Tell Stories</h2>
+    <p class="blog-section-sub-title text-center mb-5">Explore lessons from real teams, market trends, and innovative ideas driving the future of billing automation.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100 border-0">
+      <div class="card-meta border-0 rounded-1 px-3 py-2">
+        <small class="small-title">8 min read . October 10, 2025</small>
+      </div>
+      <img src="images/blog-img1.jpg" class="card-img-top rounded-1 mb-2 blog-img" alt="blog img">
+      <div class="card-body p-0">
+        <h5 class="card-title">Why Automated Invoicing Matters</h5>
+        <p class="card-text">Streamline workflows and remove errors with sma...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0">
+      <div class="card-meta border-0 rounded-1 px-3 py-2">
+        <small class="small-title">4 min read . October 9, 2025</small>
+      </div>
+      <img src="images/blog-img2.jpg" class="card-img-top rounded-1 mb-2 blog-img" alt="blog img">
+      <div class="card-body p-0">
+        <h5 class="card-title">Simplified Multi-Currency Processing</h5>
+        <p class="card-text">Learn how global teams simplify payments eff...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0">
+      <div class="card-meta border-0 rounded-1 px-3 py-2">
+        <small class="small-title">6 min read . September 29, 2025</small>
+      </div>
+      <img src="images/blog-img3.jpg" class="card-img-top rounded-1 mb-2 blog-img" alt="blog img">
+      <div class="card-body p-0">
+        <h5 class="card-title">Smart Insights for Growth</h5>
+        <p class="card-text">Learn how dashboards and analytics improve performance</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="container-fluid cta-section">
+  <div class="cta-img-section rounded-5"></div>
+  <div class="cta-content text-center container">
+    <p>Let Bizledge handle the billing, while you focus on building.</p>
+    <button class="cta-btn"><span class="spin-text">Get Started - It's Free</span></button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid" id="footer-section">
+    <div class="container">
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-5">
+                <img src="images/site logo.png" alt="Bizledge" class="footer-logo mb-4">
+                <p class="footer-content pe-lg-4">Automating finance with clarity, control, and confidence.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Main Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Integration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Company</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">Blog single</a></li>
+                    <li><a href="#">Pricing single</a></li>
+                    <li><a href="#">Integration single</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6 mb-4">
+                <h5 class="link-title">Utility Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">404</a></li>
+                    <li><a href="#">Style guide</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="link-title">Newsletter</h5>
+                <p class="footer-content mb-4">Get smarter insights, straight to your inbox. Join our monthly digest on finance automation and growth.</p>
+                <form action="https://formspree.io/f/xvzzoepn" method="POST" id="newsletter-form">
+        <div class="subscribe-box">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address.." 
+                class="subscribe-input" 
+                required
+            >
+            <button type="submit" class="subscribe-btn">Subscribe &rarr;</button>
+        </div>
+        <div id="form-status" class="mt-2" style="font-size: 14px;"></div>
+    </form>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="copyright-text text-center">© 2025 Bizledge. Created by ❤️ Arun Pratap Singh.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
