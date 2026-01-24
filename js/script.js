@@ -1063,28 +1063,7 @@ if (contactForm) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Integration sub Section
+// Contact form page
     const contactformSection = document.querySelector("#contact-section");
 
         if(contactformSection) {
@@ -1119,11 +1098,5 @@ if (contactForm) {
             }, {threshold:0.2});
             contactformObserver.observe(contactformSection);
        }
-
-
-
-
-
-
-
+       
 }); // DOMContentLoaded ends
