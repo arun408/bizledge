@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Bizledge - Automate Your Billing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!-- header     -->
+<header class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="#" class="d-lg-none cart text-decoration-none ms-auto me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu p-4">
+            <ul>
+              <li><a class="dropdown-item" href="#">Main Pages</a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="feature.html">Features</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="integrations.html">Integration</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Inner Pages</a></li>
+              <li><a class="dropdown-item" href="blogsingle.html">Blog single</a></li>
+              <li><a class="dropdown-item" href="pricingsingle.html">Pricing single</a></li>
+              <li><a class="dropdown-item" href="integrationsingle.html">Integration single</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="contact-us.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Utility Pages</a></li>
+              <li><a class="dropdown-item" href="#">Instructions</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+              <li><a class="dropdown-item" href="#">License</a></li>
+              <li><a class="dropdown-item" href="#">Changelog</a></li>
+              <li><a class="dropdown-item" href="#">Style guide</a></li>
+              <li><a class="dropdown-item" href="#">Password</a></li>
+            </ul>
+          </div>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="pricing.html">Pricing</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="feature.html">Feature</a>
+         </li>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none cart" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+        <a href="contact-us.html"><button class="rounded-3 sign-btn">Sign Up</button></a>
+      </div>  
+    </div>
+  </div>
+</nav>
+  </header>
+
+<!-- Pricing Section -->  
+<section class="container-fluid" id="pricing-section">
+  <div class="container">
+    <h2 class="pricing-section-title text-center">Growth-ready plans for you</h2>
+    <p class="pricing-section-sub-title mb-5 text-center">For startups and growing teams, select a flexible plan matching your<br> workflow, with upgrades anytime.</p>
+    <div class="row g-3 align-items-stretch">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Growth</h3>
+            <p>For expanding businesses requiring additional control and actionable insights.</p>
+            <h4 class="mb-3">$69<span>/month</span></h4>
+            <a href="pricingsingle.html"><button class="flex-grow-1 rounded-3 pricing-section-btn">Start Free Trial</button></a>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Unlimited projects</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Real-time analytics</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Advanced automation flows</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Priority chat support</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Team collaboration tools</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Scale</h3>
+            <p>For established companies aiming to optimize efficiency and expand their reach.</p>
+            <h4 class="mb-3">$99<span>/month</span></h4>
+            <a href="pricingsingle.html"><button class="flex-grow-1 rounded-3 pricing-section-btn">Get Started</button></a>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>All Growth features</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Custom reporting</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Dedicated account manager</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>API access</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Enhanced security options</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="pricing-body d-flex flex-column">
+            <h3>Enterprise</h3>
+            <p>For expanding companies requiring greater control and actionable insights.</p>
+            <h4 class="mb-3">Contact Us</h4>
+            <a href="contact-us.html"><button class="flex-grow-1 rounded-3 pricing-section-btn">Schedule a Demo</button></a>
+          </div>
+          <div class="pricing-text-block">
+            <p>Includes :</p>
+            <ul class="list-group pricing-list">
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>All Scale features</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>On-site training</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Custom integration</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>24/7 premium support</span>
+            </li>
+            <li class="list-group-item border-0 pricing-item">
+              <i class="fa-solid fa-check pricing-icon"></i><span>Compliance and risk management</span>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Compare Section -->
+<section class="container-fluid" id="feature-compare-section">
+    <div class="container">
+        <h2 class="feature-compare-section-title text-center">Compare Features</h2>
+        <div class="compare-table-wrapper">
+        <div class="row g-0 pb-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <h6 class="heading m-0">Features</h6>
+            </div>
+            <div class="col-3">
+                <h6 class="heading m-0">Growth</h6>
+            </div>
+            <div class="col-3">
+                <h6 class="heading m-0">Scale</h6>
+            </div>
+            <div class="col-3">
+                <h6 class="heading m-0">Enterprise</h6>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Keeping an eye on your budget</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Sorting out your expenses</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Money reports made easy</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Syncing multiple accounts</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Setting your financial goals</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-x node-x-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Tracking your investments</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-x node-x-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        <div class="row g-0 pb-4 mt-4 align-items-center justify-content-center compare-row">
+            <div class="col-3">
+                <p class="node m-0">Working together as a team</p>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-x node-x-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-x node-x-icon"></i>
+            </div>
+            <div class="col-3">
+                <i class="bi bi-check-lg node-icon"></i>
+            </div>
+        </div>
+        </div>
+    </div>    
+</section>
+
+<!-- FAQ Section -->
+<section class="container-fluid" id="faq-section">
+  <div class="container">
+    <h2 class="faq-title text-center">Frequently Asked Questions</h2>
+    <p class="faq-sub-title mb-5 text-center">A complete guide to getting started with Bizledge.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <p class="accordion-title m-0">How quickly can I start using Bizledge?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Create your account in minutes, finish quick onboarding steps, and instantly begin sending and receiving payments, with seamless access, zero waiting time, and no unnecessary delays.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <p class="accordion-title m-0">What currencies does Bizledge support?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Bizledge enables support for multiple cryptocurrencies like Bitcoin, Ethereum, and various altcoins, allowing easy management of diversified digital asset portfolios.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <p class="accordion-title m-0">Is Bizledge secure?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Bizledge uses robust encryption and modern security measures to safeguard your funds and personal data against unauthorized access.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <p class="accordion-title m-0">Are there any fees associated with Bizledge?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Although creating an account on Bizledge is free, transaction fees may apply depending on the network used and selected services.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <p class="accordion-title m-0">Can I access Bizledge on my mobile device?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Definitely, Bizledge offers an intuitive mobile app enabling easy management of your assets and transactions anytime, anywhere.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <p class="accordion-title m-0">What should I do if I forget my password?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">If you ever forget your password, simply use the Forgot Password option on the login page to follow guided steps and restore access quickly.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        <p class="accordion-title m-0">Does Bizledge provide customer support?</p>
+        <i class="bi bi-plus-lg ms-auto faq-icon"></i>
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="accordion-content m-0">Bizledge provides round-the-clock customer support via live chat, email, and an extensive help center for user assistance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid" id="footer-section">
+    <div class="container">
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-5">
+                <img src="images/site logo.png" alt="Bizledge" class="footer-logo mb-4">
+                <p class="footer-content pe-lg-4">Automating finance with clarity, control, and confidence.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Main Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="integrations.html">Integration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Company</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="blogsingle.html">Blog single</a></li>
+                    <li><a href="pricingsingle.html">Pricing single</a></li>
+                    <li><a href="integrationsingle.html">Integration single</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6 mb-4">
+                <h5 class="link-title">Utility Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">404</a></li>
+                    <li><a href="#">Style guide</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="link-title">Newsletter</h5>
+                <p class="footer-content mb-4">Get smarter insights, straight to your inbox. Join our monthly digest on finance automation and growth.</p>
+                <form action="https://formspree.io/f/xvzzoepn" method="POST" id="newsletter-form">
+        <div class="subscribe-box">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address.." 
+                class="subscribe-input" 
+                required
+            >
+            <button type="submit" class="subscribe-btn">Subscribe &rarr;</button>
+        </div>
+        <div id="form-status" class="mt-2" style="font-size: 14px;"></div>
+    </form>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="copyright-text text-center">© 2025 Bizledge. Created by ❤️ Arun Pratap Singh.</p>
+    </div>
+</footer>  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>    
+</body>
+</html>

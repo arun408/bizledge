@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bizledge - Automate Your Billing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<!-- navbar     -->
+<header class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="#" class="d-lg-none cart text-decoration-none ms-auto me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu p-4">
+            <ul>
+              <li><a class="dropdown-item" href="#">Main Pages</a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="feature.html">Features</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="integrations.html">Integration</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Inner Pages</a></li>
+              <li><a class="dropdown-item" href="blogsingle.html">Blog single</a></li>
+              <li><a class="dropdown-item" href="pricingsingle.html">Pricing single</a></li>
+              <li><a class="dropdown-item" href="integrationsingle.html">Integration single</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="contact-us.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Utility Pages</a></li>
+              <li><a class="dropdown-item" href="#">Instructions</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+              <li><a class="dropdown-item" href="#">License</a></li>
+              <li><a class="dropdown-item" href="#">Changelog</a></li>
+              <li><a class="dropdown-item" href="#">Style guide</a></li>
+              <li><a class="dropdown-item" href="#">Password</a></li>
+            </ul>
+          </div>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="feature.html">Feature</a>
+         </li>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none cart" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+        <a href="contact-us.html"><button class="rounded-3 sign-btn">Sign Up</button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+  </header>
+
+<!-- Contact Section   -->
+<section class="container-fluid" id="contact-section">
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+        <h2 class="contact-section-title mb-4 text-center">Contact Bizledge for<br class="d-none d-lg-block"> payment solution</h2>
+        <a href="contact-us.html"><button class="hero-btn contact-btn"><span class="rotate-text">Get Started</span></button></a>
+        </div>
+        <div class="row g-3 contact-section-row align-items-stretch">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-block d-flex gap-3 align-items-center h-100">
+                    <div class="contact-icon-wrap">
+                        <i class="bi bi-envelope contact-icon"></i>
+                    </div>
+                    <div class="contact-info-wrap">
+                        <p class="contact-info-title m-0">Email</p>
+                        <p class="contact-info-content m-0">support@bizledge.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-block d-flex gap-3 align-items-center h-100">
+                    <div class="contact-icon-wrap">
+                        <i class="bi bi-telephone contact-icon"></i>
+                    </div>
+                    <div class="contact-info-wrap">
+                        <p class="contact-info-title m-0">Phone</p>
+                        <p class="contact-info-content m-0">
+                            <a href="tel:+918076931762">+91 8076931762</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-block d-flex gap-3 align-items-center h-100">
+                    <div class="contact-icon-wrap">
+                        <i class="bi bi-crosshair contact-icon"></i>
+                    </div>
+                    <div class="contact-info-wrap">
+                        <p class="contact-info-title m-0">Address</p>
+                        <p class="contact-info-content m-0">31, Rue d'Alsace Île-de-France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="https://formspree.io/f/xlgjvnlr" id="contact-form" method="post">
+            <div class="row g-3 contact-form-row">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstName" name="firstName">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastName" name="lastName">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" id="email">
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" name="phone" class="form-control" placeholder="Phone" id="phone">
+                </div>
+                <div class="col-md-6">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" rows="6" class="form-control" placeholder="Type Message" id="message"></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="cta-btn w-100 contact-form-btn" type="submit" id="contactSubmitBtn"><span class="spin-text">Send Message</span></button>
+                </div>
+                <div class="col-12">
+                    <p id="contactStatus" class="mt-2 text-center d-none"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid" id="footer-section">
+    <div class="container">
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-5">
+                <img src="images/site logo.png" alt="Bizledge" class="footer-logo mb-4">
+                <p class="footer-content pe-lg-4">Automating finance with clarity, control, and confidence.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Main Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="integrations.html">Integration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Company</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="blogsingle.html">Blog single</a></li>
+                    <li><a href="pricingsingle.html">Pricing single</a></li>
+                    <li><a href="integrationsingle.html">Integration single</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6 mb-4">
+                <h5 class="link-title">Utility Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">404</a></li>
+                    <li><a href="#">Style guide</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="link-title">Newsletter</h5>
+                <p class="footer-content mb-4">Get smarter insights, straight to your inbox. Join our monthly digest on finance automation and growth.</p>
+                <form action="https://formspree.io/f/xvzzoepn" method="POST" id="newsletter-form">
+        <div class="subscribe-box">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address.." 
+                class="subscribe-input" 
+                required
+            >
+            <button type="submit" class="subscribe-btn">Subscribe &rarr;</button>
+        </div>
+        <div id="form-status" class="mt-2" style="font-size: 14px;"></div>
+    </form>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="copyright-text text-center">© 2025 Bizledge. Created by ❤️ Arun Pratap Singh.</p>
+    </div>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Single | Bizledge - Automate Your Billing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<!-- navbar     -->
+<header class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="#" class="d-lg-none cart text-decoration-none ms-auto me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu p-4">
+            <ul>
+              <li><a class="dropdown-item" href="#">Main Pages</a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="feature.html">Features</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="integrations.html">Integration</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Inner Pages</a></li>
+              <li><a class="dropdown-item" href="blogsingle.html">Blog single</a></li>
+              <li><a class="dropdown-item" href="pricingsingle.html">Pricing single</a></li>
+              <li><a class="dropdown-item" href="integrationsingle.html">Integration single</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="contact-us.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a class="dropdown-item" href="#">Utility Pages</a></li>
+              <li><a class="dropdown-item" href="#">Instructions</a></li>
+              <li><a class="dropdown-item" href="earlyaccess.html">Early access</a></li>
+              <li><a class="dropdown-item" href="#">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+              <li><a class="dropdown-item" href="#">License</a></li>
+              <li><a class="dropdown-item" href="#">Changelog</a></li>
+              <li><a class="dropdown-item" href="#">Style guide</a></li>
+              <li><a class="dropdown-item" href="#">Password</a></li>
+            </ul>
+          </div>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="feature.html">Feature</a>
+         </li>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="#" class="text-decoration-none cart" data-bs-toggle="modal" data-bs-target="#exampleModal">Cart (0)</a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Your Cart</h4>
+                <button type="button" class="btn-close cart-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">No items found</div>
+            </div>
+          </div>
+        </div>
+        <a href="contact-us.html"><button class="rounded-3 sign-btn">Sign Up</button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+  </header>
+
+<!-- Integration Single Section  -->
+<section class="container-fluid" id="integration-single-section">
+    <div class="container">
+        <div class="row g-4 integration-single-section-row">
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 20px; z-index: 10;">
+                    <h1 class="integration-single-section-title">Bizledge + <br class="d-none d-lg-block">Orderease</h1>
+                    <p class="integration-single-section-sub-title">Improve shopping with custom<br class="d-none d-lg-block"> tips, live stock updates,<br class="d-none d-lg-block"> and a smooth interface.</p>
+                    <a href="contact-us.html"><button class="hero-btn shadow"><span class="rotate-text">Connect</span></button></a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h2 class="integration-single-section-content-heading">Quick Look</h2>
+                <p class="integration-single-section-content">The Ease integration with Bizledge helps online sellers accept payments quickly and easily. It delivers a smooth, safe, and fast checkout for customers. Built for e-commerce brands of any size, this setup connects your OrderEase store directly to the Bizledge payment gateway. It enables fast transactions, multi-currency support, and live order and payment updates. Merchants can automate key finance tasks like syncing transactions with accounting tools, tracking payment status in real time, and handling recurring subscription billing with clear reports and insights.</p>
+                <h2 class="integration-single-section-content-heading">Key Duties</h2>
+                <p class="integration-single-section-content">The Ease integration with Bizledge is packed with tools that make online payments smooth, safe, and ready to scale for businesses of all sizes. It improves security and speed while delivering a simple checkout experience that builds trust, reduces cart drop-offs, and increases conversions. Businesses also gain access to analytics and reports that provide clear insights into revenue, refunds, payment trends, and customer behavior for smarter decisions overall.</p>
+                <ul class="d-flex flex-column gap-3">
+                    <li class="integration-single-section-content">Process payments instantly and accept cards and digital wallets without delays or extra steps.</li>
+                    <li class="integration-single-section-content">Support global customers by taking payments in more than 100 currencies worldwide with ease.</li>
+                    <li class="integration-single-section-content">Get payment updates with synced statuses, invoices, and order alerts automatically.</li>
+                    <li class="integration-single-section-content">Use PCI-compliant checkout to protect customer data, reduce fraud, and ensure secure payment processing.</li>
+                    <li class="integration-single-section-content">Link your OrderEase store smoothly to accounting, CRM, and other tools for custom workflows.</li>
+                    <li class="integration-single-section-content">Handle repeat customers easily with automated subscription billing and recurring payment setup.</li>
+                    <li class="integration-single-section-content">Access revenue, refund, and transaction reports directly in Bizledge for clear analytics and performance insights.</li>
+                </ul>
+                <h2 class="integration-single-section-content-heading">Merchant Perks</h2>
+                <p class="integration-single-section-content">The Ease integration with Bizledge is designed to offer merchants a complete, fast, and secure payment system that supports growth and simplifies operations. Connecting your OrderEase store to Bizledge lets businesses handle transactions effortlessly while giving customers a smooth, reliable checkout experience that boosts trust and sales.</p>
+                <h2 class="integration-single-section-content-heading">Real-World Applications</h2>
+                <p class="integration-single-section-content">The Ease integration with Bizledge is made for many types of merchants and business models, helping them simplify payments, improve operations, and deliver a smooth customer experience. Online sellers offering physical or digital goods can use OrderEase to accept payments instantly, reduce cart drop-offs, and grow their business worldwide. The integration supports multi-currency transactions, ensuring international customers enjoy a fast, localized checkout with clear pricing and reliable payment processing.</p>
+                <h2 class="integration-single-section-content-heading">Getting Started Made Easy</h2>
+                <ul class="d-flex flex-column gap-3">
+                    <li class="integration-single-section-content">Link your Ease store to Bizledge quickly in just a few simple clicks.</li>
+                    <li class="integration-single-section-content">Configure payment methods, currencies, and subscription settings to match your business needs.</li>
+                    <li class="integration-single-section-content">Begin accepting secure payments instantly with live tracking and automated payment workflows.</li>
+                    <li class="integration-single-section-content">Use the Bizledge dashboard to monitor payments, generate reports, and gain insights to improve performance.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Integration Single Sub-Section -->
+<section class="container-fluid" id="integration-single-sub-section">
+    <div class="container">
+        <h2 class="integration-single-sub-section-title text-center">More Integrations</h2>
+        <div class="row g-3 mt-5 integration-single-sub-section-row">
+            <div class="col-lg-4 col-md-6">
+                <div class="integration-widget">
+                    <div class="integration-icon-wrap mb-3">
+                        <i class="bi bi-shield-shaded integration-icon"></i>
+                    </div>
+                    <p class="mb-2 integration-widget-title">DataShield</p>
+                    <p class="integration-widget-content">Keep your business safe with data security, rule checks, and regular vulnerability scans.</p>
+                    <button class="rounded-3 sign-btn">View Details</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="integration-widget">
+                    <div class="integration-icon-wrap mb-3">
+                        <i class="bi bi-person-circle integration-icon"></i>
+                    </div>
+                    <p class="mb-2 integration-widget-title">HelpHub</p>
+                    <p class="integration-widget-content">Give great customer support with chatbots, ticketing, and a full help center for users.</p>
+                    <button class="rounded-3 sign-btn">View Details</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="integration-widget">
+                    <div class="integration-icon-wrap mb-3">
+                        <i class="bi bi-truck integration-icon"></i>
+                    </div>
+                    <p class="mb-2 integration-widget-title">ShipQuick</p>
+                    <p class="integration-widget-content">Improve logistics with auto shipping, live tracking, and low-cost carrier choices for orders.</p>
+                    <button class="rounded-3 sign-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid" id="footer-section">
+    <div class="container">
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-5">
+                <img src="images/site logo.png" alt="Bizledge" class="footer-logo mb-4">
+                <p class="footer-content pe-lg-4">Automating finance with clarity, control, and confidence.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Main Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="integrations.html">Integration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-1-5 col-md-3 col-6 mb-4">
+                <h5 class="link-title">Company</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="blogsingle.html">Blog single</a></li>
+                    <li><a href="pricingsingle.html">Pricing single</a></li>
+                    <li><a href="#">Integration single</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6 mb-4">
+                <h5 class="link-title">Utility Pages</h5>
+                <ul class="list-unstyled footer-link-list">
+                    <li><a href="#">404</a></li>
+                    <li><a href="#">Style guide</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="link-title">Newsletter</h5>
+                <p class="footer-content mb-4">Get smarter insights, straight to your inbox. Join our monthly digest on finance automation and growth.</p>
+                <form action="https://formspree.io/f/xvzzoepn" method="POST" id="newsletter-form">
+        <div class="subscribe-box">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address.." 
+                class="subscribe-input" 
+                required
+            >
+            <button type="submit" class="subscribe-btn">Subscribe &rarr;</button>
+        </div>
+        <div id="form-status" class="mt-2" style="font-size: 14px;"></div>
+    </form>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <p class="copyright-text text-center">© 2025 Bizledge. Created by ❤️ Arun Pratap Singh.</p>
+    </div>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
